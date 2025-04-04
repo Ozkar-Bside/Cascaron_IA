@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "types": [
+      "node",
+      "chai"
+      // Remueve "@playwright/test" si no lo necesitas
+    ],
+    "skipLibCheck": true
+  },
+  "include": [
+    "types/**/*.d.ts",
+    "src/**/*.ts",
+    "reportportal.config.js"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "playwright-hybrid-framework",
+  "version": "1.0.0",
+  "description": "Framework híbrido UI/API/BDD con Playwright + IA",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:bdd": "set \"TS_NODE_PROJECT=tsconfig.json\" && cucumber-js src/bdd/features --require-module ts-node/register --require src/bdd/features/steps/**/*.ts -f pretty -f ./reportPortalFormatter.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "date-fns": "^2.30.0",
+    "docx": "^9.3.0",
+    "fs-extra": "^11.3.0",
+    "jimp": "^0.22.10",
+    "mysql2": "^3.14.0",
+    "pg": "^8.14.1",
+    "supertest": "^6.3.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.51.1",
+    "@reportportal/agent-js-cucumber": "^5.5.1",
+    "@reportportal/agent-js-playwright": "^5.1.11",
+    "@types/chai": "^5.2.1",
+    "@types/cucumber": "^7.0.3",
+    "@types/node": "^18.0.0",
+    "@types/pg": "^8.11.11",
+    "@types/supertest": "^6.0.3",
+    "@wdio/cucumber-framework": "^9.12.3",
+    "@wdio/globals": "^9.12.3",
+    "@wdio/types": "^9.12.3",
+    "chai": "^4.5.0",
+    "playwright": "^1.51.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.0",
+    "webdriverio": "^9.12.3"
+  }
+}
